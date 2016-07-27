@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="animate.css">
+   <link rel="stylesheet" type="text/css" href="flip.css">
+  </head>
+  <body>
+    <div id="flip3d" class="flip3d" onclick="flip_demo();">
+      <div class="back"> Box 1 - Back</div>
+      <div class="front"> Box 1 - Front</div>
+    </div>
+
+    <div id="dropdownForm" class="cards hide">
+        <p>Create a nickname to use in this room:</p>
+        <input type="" name="nick_name">
+        <button onclick="reset()">Create My Nickname</button>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="flip.js"></script>
+  </body>
+</html>
+
+<!--
+Sequence of animation is:
+  flip to left
+  drop div that contains form
+  wobble the div (to prompt user to fill form)
+ -->
